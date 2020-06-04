@@ -1,4 +1,5 @@
-# NoGameNoLife - Cervical Cancer Detection
+# Cervical Cancer Detection
+——————————team：NoGameNoLife 
 
 ## 特别声明
 感谢您的审查，由于脚本内路径全部需要调整来符合代码规范，如遇路径问题无法运行代码请及时与我们联系。谢谢！
