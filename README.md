@@ -1,4 +1,4 @@
-# Cervical Cancer Detection(初赛代码)
+# Cervical Cancer Detection(初赛24/2359代码)
 ——————————team：NoGameNoLife 
 
 ## 特别声明
