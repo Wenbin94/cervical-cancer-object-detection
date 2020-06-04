@@ -6,8 +6,7 @@ This code is for the competition of ['Digitized Human Body' Visual Challenge - I
 ![image](https://tianchi-public.oss-cn-hangzhou.aliyuncs.com/public/files/forum/156976273635179161569762735242.jpeg)
 Note: Data and kfbreader is not allowed to be published, but [experiment details](https://mp.weixin.qq.com/s?__biz=MzUyNzA1OTcxNg==&mid=2247483668&idx=1&sn=e9c3d6afd96ebdd5c330825b6e5d5188&chksm=fa041f7fcd739669af9cc181ffcd9bf1bd3ed32c156d7c8adb860104ef4ac0a87cb5e8420140&token=1035786795&lang=zh_CN#rd) are pulished..  
 
-## 特别声明
-感谢您的查看，由于脚本内路径全部需要调整来符合代码规范，如遇路径问题无法运行代码请及时与我们联系。谢谢！
+
 
 ## 方案概述
 由于预测结果中假阳性较多，我们使用了多级分类检测的方法，首先利用所有整图数据训练一个resnext101_32x8d分类整图的阴性和阳性，再利用ROI中不含有目标的切块训练一个同样结构的resnext101_32x8d来分类切块是否含有目标。最后将经过两轮过滤的切块用来目标检测推理。此方法除了过滤假阳性之外，还有效缩短了约60%的推理时间。
@@ -119,3 +118,5 @@ python code/scripts/tile_classify_predict.py
 cd code/mmdetection
 ./tools/dist_train.sh cervical_config/tile_libra_faster_rcnn_x101_64x4d_fpn_1x_new.py 4 --validate
 ```
+## 特别声明
+感谢您的查看，由于脚本内路径全部需要调整来符合代码规范，如遇问题请及时与我们联系。
